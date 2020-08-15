@@ -23,7 +23,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.App-body {
+  height: 100%;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +37,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+/**
+Flex column
+ */
+.App-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+/**
+Flex direction
+ */
+.App-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/**
+Vertical divider
+ */
+.App-divider {
+  border-left: 1px solid grey;
+  height: 500px;
+}
+/**
+Image wrapper had double width
+ */
+.App-img-wrapper {
+  flex: 2;
 }

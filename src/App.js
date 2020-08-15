@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from './components/Button.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-body App-row">
+          <div className="App-img-wrapper App-column">
+            Here will be an image
+          </div>
+          <div className="App-divider"></div>
+          <div className="App-actions-wrapper App-column">
+              <Button name="new-test-block" value="new-test-block" label="new text block"/>
+              <Button name="zoom-in" value="zoom-in" label="zoom in"/>
+              <Button name="zoom-out" value="zoom-out" label="zoom out"/>
+              <Button name="rotate" value="rotate" label="rotate"/>
+          </div>
+      </div>
     </div>
   );
 }
