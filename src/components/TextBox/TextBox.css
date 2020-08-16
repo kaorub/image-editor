@@ -5,3 +5,7 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.TextBox input {
+    font-size: 1.2rem;
+}

@@ -59,13 +59,18 @@ Flex direction
 Vertical divider
  */
 .App-divider {
-  border-left: 1px solid grey;
-  height: 500px;
+  border-left: 1px solid rgb(144, 202, 249);
+;
 }
 /**
 Image wrapper had double width
  */
 .App-img-wrapper {
   flex: 2;
+  align-items: center;
+  display: flex;
   position: relative;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
 }
