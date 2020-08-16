@@ -12,14 +12,18 @@ export class Image extends React.Component {
 
         this.props = props
     }
+
     render () {
+        const style = { transform: this.props.transform }
         return <img
+                style={style}
                 alt="to edit"
                 ref={this.props.reference}
                 src={this.props.src}
                 className="Image"
-                width={255}
-                height={255}
+                width={this.props.width}
+                height={this.props.height}
+                onClick={this.props.onClick}
             />
     }
 

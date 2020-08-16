@@ -10,13 +10,11 @@ class TextBox extends React.Component {
     constructor(props) {
         super(props)
 
-        this.state = { text: '', textEntered: false }
-
         /**
          * Set textEntered to conditionally show the div element with text
          */
         this.handleBlur = () => {
-            this.setState( { ...this.state, textEntered: true })
+            this.props.handleBlur()
         }
 
         /**
@@ -24,16 +22,17 @@ class TextBox extends React.Component {
          * @param event
          */
         this.handleChange = (event) => {
-            this.setState({ ...this.state, text: event.target.value })
+            this.props.handleChange(event.target.value)
         }
     }
 
     render () {
         return (
             <div className="TextBox">
-                {!this.state.textEntered &&
+                {!this.props.textEntered &&
                 <input type="text" onBlur={this.handleBlur} onChange={this.handleChange}/>}
-                {this.state.textEntered && this.state.text}
+                {this.props.textEntered &&
+                <span>{this.props.text}</span>}
             </div>
         )
     }
