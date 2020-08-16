@@ -1,3 +1,9 @@
+Project to edit (scale, add text) an image loaded by user
+- install dependencies with ```yarn```
+- run with ```yarn start```
+- test with ```yarn test```
+
+# Generated documentation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
