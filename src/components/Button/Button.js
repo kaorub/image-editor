@@ -9,7 +9,12 @@ import './Button.css';
 
 function Button(props) {
   return <div>
-    <button name={props.name} value={props.value} className="Button">
+    <button
+        name={props.name}
+        value={props.value}
+        className="Button"
+        onClick={props.onClick}
+    >
       {props.label}
     </button>
   </div>
