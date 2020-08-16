@@ -14,3 +14,18 @@ export const ROTATE_ANGLE = 90
  * @type {string}
  */
 export const ZERO_WIDTH_SPACE_SYMBOL = '\u200B'
+/**
+ * Initial img width
+ * @type {number}
+ */
+export const INITIAL_WIDTH = 255
+/**
+ * Initial img height
+ * @type {number}
+ */
+export const INITIAL_HEIGHT = 255
+/**
+ * Initial mini img size
+ * @type {number}
+ */
+export const INITIAL_MINI_SIZE = 50
