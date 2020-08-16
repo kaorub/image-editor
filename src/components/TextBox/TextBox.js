@@ -12,24 +12,27 @@ class TextBox extends React.Component {
 
         this.state = { text: '', textEntered: false }
 
-        this.toggleIsCreated = () => {
-            this.setState( { ...this.state, textEntered: !this.state.textEntered })
+        /**
+         * Set textEntered to conditionally show the div element with text
+         */
+        this.handleBlur = () => {
+            this.setState( { ...this.state, textEntered: true })
         }
 
-        this.handleInput = (event) => {
+        /**
+         * Set text value to be shown in div element
+         * @param event
+         */
+        this.handleChange = (event) => {
             this.setState({ ...this.state, text: event.target.value })
         }
-    }
-
-    componentDidMount() {
-        console.log('text box added')
     }
 
     render () {
         return (
             <div className="TextBox">
                 {!this.state.textEntered &&
-                <input type="text" onBlur={this.toggleIsCreated} onChange={this.handleInput}/>}
+                <input type="text" onBlur={this.handleBlur} onChange={this.handleChange}/>}
                 {this.state.textEntered && this.state.text}
             </div>
         )

@@ -13,8 +13,7 @@ export class Image extends React.Component {
         this.props = props
     }
     render () {
-        return <div>
-            <img
+        return <img
                 alt="to edit"
                 ref={this.props.reference}
                 src={this.props.src}
@@ -22,7 +21,6 @@ export class Image extends React.Component {
                 width={255}
                 height={255}
             />
-        </div>
     }
 
 }

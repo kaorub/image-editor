@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot renders 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="App-body App-row"
+  >
+    <div
+      className="App-img-wrapper App-column"
+    >
+      <img
+        alt="to edit"
+        className="Image"
+        height={255}
+        src="./images/sanfran.jpeg"
+        width={255}
+      />
+    </div>
+    <div
+      className="App-divider"
+    >
+      ​
+    </div>
+    <div
+      className="App-actions-wrapper App-column"
+    >
+      <div>
+        <button
+          className="Button"
+          name="new-test-block"
+          onClick={[Function]}
+          value="new-test-block"
+        >
+          new text block
+        </button>
+      </div>
+      <div>
+        <button
+          className="Button"
+          name="zoom-in"
+          onClick={[Function]}
+          value="zoom-in"
+        >
+          zoom in
+        </button>
+      </div>
+      <div>
+        <button
+          className="Button"
+          name="zoom-out"
+          onClick={[Function]}
+          value="zoom-out"
+        >
+          zoom out
+        </button>
+      </div>
+      <div>
+        <button
+          className="Button"
+          name="rotate"
+          onClick={[Function]}
+          value="rotate"
+        >
+          rotate
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

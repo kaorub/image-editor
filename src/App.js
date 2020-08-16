@@ -62,12 +62,6 @@ class App extends React.Component {
         };
     }
 
-    componentDidMount () {
-        // if (this.imageRef) {
-        //     this.cropper = utils.getCropper(this.imageRef)
-        // }
-    }
-
     componentWillUnmount() {
         /**
          * Set imageRef empty on desstroy
