@@ -67,4 +67,5 @@ Image wrapper had double width
  */
 .App-img-wrapper {
   flex: 2;
+  position: relative;
 }
