@@ -2,7 +2,7 @@
  * Zoom ratio value
  * @type {number}
  */
-export const ZOOM_RATIO = 1.2
+export const ZOOM_RATIO = 1.25
 /**
  * Rotate angle value
  * @type {number}
