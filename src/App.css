@@ -76,4 +76,6 @@ Image wrapper had double width
   margin: 0 auto;
 }
 .App-footer {
+  display: inline;
+  padding: 20px;
 }
