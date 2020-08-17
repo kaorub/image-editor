@@ -25,6 +25,7 @@
 }
 .App-body {
   height: 100%;
+  padding: 30px;
 }
 .App-link {
   color: #61dafb;

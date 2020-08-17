@@ -186,6 +186,22 @@ class App extends React.Component {
                             textEntered={state.textEntered}
                         />
                         }
+                        <div className="App-footer App-row">
+                            <Image
+                                width={constants.INITIAL_MINI_SIZE}
+                                height={constants.INITIAL_MINI_SIZE}
+                                transform={frontState.transform}
+                                src="./images/sanfran.jpeg"
+                                onClick={() => this.handleClickMiniImg('front')}
+                            />
+                            <Image
+                                width={constants.INITIAL_MINI_SIZE}
+                                height={constants.INITIAL_MINI_SIZE}
+                                transform={backState.transform}
+                                src="./images/sanfran.jpeg"
+                                onClick={() => this.handleClickMiniImg('back')}
+                            />
+                        </div>
                     </div>
                     <div className="App-divider">{constants.ZERO_WIDTH_SPACE_SYMBOL}</div>
                     <div className="App-actions-wrapper App-column">
@@ -193,22 +209,6 @@ class App extends React.Component {
                         <Button name="zoom-in" value="zoom-in" label="zoom in" onClick={() => this.zoom('greater')}/>
                         <Button name="zoom-out" value="zoom-out" label="zoom out" onClick={() => this.zoom('less')}/>
                         <Button name="rotate" value="rotate" label="rotate" onClick={this.rotate}/>
-                    </div>
-                    <div className="App-footer App-row">
-                        <Image
-                            width={constants.INITIAL_MINI_SIZE}
-                            height={constants.INITIAL_MINI_SIZE}
-                            transform={frontState.transform}
-                            src="./images/sanfran.jpeg"
-                            onClick={() => this.handleClickMiniImg('front')}
-                        />
-                        <Image
-                            width={constants.INITIAL_MINI_SIZE}
-                            height={constants.INITIAL_MINI_SIZE}
-                            transform={backState.transform}
-                            src="./images/sanfran.jpeg"
-                            onClick={() => this.handleClickMiniImg('back')}
-                        />
                     </div>
                 </div>
             </div>
